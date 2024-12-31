@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication system</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <h1>sign in </h1>
+    </div>
+    <div class="container">
+        <form action="/signin" method="post">
+            <input  name="email"type="email" placeholder="email" class="form-control UTF-8"><br>
+            <input name="password" type="password" placeholder="password" class="form-control UTF-8"><br>
+            <button type="submit" class="btn btn-primary w-100" name="submit">submit</button><br>
+        </form>
+    
+    </div>
+    <div class="container">
+        <a href="{{url_for('login')}}">already have an account</a><br>
+
+    </div>
+</body>
+</html>
